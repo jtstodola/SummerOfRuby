@@ -1,0 +1,61 @@
+body {
+  border: 2px solid #000;
+  font-family: sans-serif;
+  margin-right: auto;
+  margin-left: auto;
+  width: 1000px;
+}
+
+header {
+  background-color: rgba(50, 135, 200, .6);
+  border-bottom: 2px solid #000;
+  height: 100px;
+  margin: 0px 0px 15px 0px;
+  position: relative;
+}
+
+header > h1 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 30px;
+  text-align: center;
+}
+
+fieldset {
+  margin-bottom: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 900px;
+}
+
+#field {
+  width: 170px;
+}
+
+table {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+table td {
+  padding: 5px 10px;
+}
+
+#selected {
+  margin: 5px;
+}
+
+#add_link {
+  width: 950px;
+  text-align: right;
+  margin: 10px;
+}
+
+footer {
+  background-color: rgba(50, 135, 200, .6);
+  border-top: 2px solid #000;
+  margin-top: 15px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  text-align: center;
+}
