@@ -25,7 +25,7 @@ SQL
     @title = "Links"
     @results = CONNECTION.execute(
       "SELECT id, name, url, description FROM links ORDER BY id DESC")
-    @tablerows 
+    @tablerows   # what is this? I don't think it's needed.
     
     erb :links
   end
@@ -40,7 +40,10 @@ SQL
     @add_link = CONNECTION.execute(
       "INSERT INTO links (name, url, description) VALUES (?, ?, ?)", 
         [name, url, description])
-
+    # are you ever using @add_link in your view? if not,
+    # it shouldn't be an @ variable. It should be local.
+    # really, you should be looking at whether or not @add_link worked
+    # by checking the value here. Your code assumes it always works.
     redirect "/links"
   end
 
