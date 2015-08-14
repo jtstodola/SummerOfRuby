@@ -1,5 +1,5 @@
 <% if @results.length > 0 %>
-  <% @results.map do |row| %>
+  <% @results.each do |row| %>
     <table id="selected">
       <tr><td>ID:</td><td><%= row[0] %></td></tr>
       <tr><td>Name:</td><td><%= row[1] %></td></tr>
